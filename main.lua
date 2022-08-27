@@ -10,9 +10,7 @@ function _init()
         ey=0
         es=62
         ef=true 
-        
     end
-    
     
     function _update()
      
@@ -48,7 +46,6 @@ function _init()
         
     end
     
-    
     function flying()
     
         if (btn(0))	x-=1.5 f=true 
@@ -68,7 +65,7 @@ function _init()
         if (x>ex) ex+=1.5
         if (y>ey) ey+=1.5
         if (x<ex) ex-=1.5
-     if (y<ey) ey-=1.5
+        if (y<ey) ey-=1.5
      
      --+2 accounts for glitch y tracking
         --player sometimes below by only 1 pixel
@@ -77,7 +74,7 @@ function _init()
         if (x>ex and y>ey+2) es=45 
         if (x<ex and y>ey+2) es=45 
      
-     if (x<ex) ef=true
+        if (x<ex) ef=true
         if (x>ex) ef=false
         
     end	
